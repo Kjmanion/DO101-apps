@@ -7,7 +7,8 @@ const UNITS = process.env.UNITS || 'metric';
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  console.log('I MADe a chANGE')
+  console.log('I MADe a chANGE');
+  console.log(OWM_API_KEY);
   res.render('index', { weather: null, err: null });
 });
 
